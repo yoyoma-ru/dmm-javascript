@@ -1,12 +1,12 @@
 $(".theTarget").skippr({
-	transition : 'fade',
+	transition : 'slide',
 	speed : 1000,
 	easing : 'easeOutQuart',
 	navType : 'block',
 	childrenElemntType : 'div',
 	arrows : true,
-	autoPlay : false,
-	autoPlayDuration : 5000,
+	autoPlay : true,
+	autoPlayDuration : 3000,
 	keyboardOnAlways : true,
-	hedePrevious : false,
+	hedePrevious : true,
 });
