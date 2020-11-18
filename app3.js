@@ -35,6 +35,40 @@
 // });
 
 
+// 要素を非表示
+// $(function(){
+// 	$(".box1").hide();
+// });
+
+
+// マウスオーバー。マウスアウト
+// $(function(){
+// 	$('.box1').mouseover(function(){
+// 		$('.box1').css('background-color', '#0000FF');
+// 	});
+// 	$('.box1').mouseout(function(){
+// 		$('.box1').css('background-color', '#FF0000');
+// 	});
+// });
+
+
+// classの切り替え
+// $(function(){
+// 	$('.box1').mouseover(function(){
+// 		$('.box1').addClass('box1-ext');
+// 	});
+// 	$('.box1').mouseout(function(){
+// 		$('.box1').removeClass('box1-ext');
+// 	});
+// });
+
+
+// マウスクリックイベント
 $(function(){
-	$(".box1").hide();
+	$('.box1').on('click', function(){
+		$('.box1').addClass('box1-ext');
+	});
+	$('.box1').mouseout(function(){
+		$('.box1').removeClass('box1-ext');
+	});
 });
